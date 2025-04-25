@@ -1,0 +1,35 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:NearEarthObjects.ViewModels"
+             x:Class="NearEarthObjects.Views.NearEarthObjectsPage"
+             x:Name="Page"
+             Title="Near Earth Objects">
+
+    <ContentPage.BindingContext>
+        <vm:NearEarthObjectsViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <StackLayout Padding="10">
+            <CollectionView ItemsSource="{Binding NearEarthObjects}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="5">
+                            <Label Text="{Binding Name}" 
+                                   FontSize="18" 
+                                   FontAttributes="Bold" 
+                                   TextColor="Blue">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding BindingContext.NavigateToDetailsCommand, Source={x:Reference Page}}" 
+                                                          CommandParameter="{Binding .}" />
+                                </Label.GestureRecognizers>
+                            </Label>
+                            <Label Text="Potentially Hazardous: {Binding IsPotentiallyHazardous}" />
+                            <Label Text="Estimated Diameter (km): {Binding Diameter.Kilometers.Min} - {Binding Diameter.Kilometers.Max}" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

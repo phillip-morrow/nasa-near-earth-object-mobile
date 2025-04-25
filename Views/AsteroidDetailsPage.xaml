@@ -1,0 +1,38 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:NearEarthObjects.ViewModels"
+             x:Class="NearEarthObjects.Views.AsteroidDetailsPage"
+             Title="Asteroid Details">
+    <ScrollView>
+        <StackLayout Padding="10">
+            <Label Text="{Binding Name}" FontSize="24" FontAttributes="Bold" />
+            <Label Text="Potentially Hazardous:" FontSize="18" />
+            <Label Text="{Binding IsPotentiallyHazardous}" FontSize="18" />
+            <Label Text="Estimated Diameter (km):" FontSize="18" />
+            <Label Text="{Binding Diameter.Kilometers.Min} - {Binding Diameter.Kilometers.Max}" FontSize="18" />
+            <Label Text="Closest Approach Date:" FontSize="18" />
+            <Label Text="{Binding CloseApproachData[0].CloseApproachDate}" FontSize="18" />
+            <Label Text="Miss Distance (km):" FontSize="18" />
+            <Label Text="{Binding CloseApproachData[0].MissDistance.Kilometers}" FontSize="18" />
+        </StackLayout>
+    </ScrollView>
+    <CollectionView ItemsSource="{Binding NearEarthObjects}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <StackLayout Padding="5">
+                    <Label Text="{Binding Name}" 
+                           FontSize="18" 
+                           FontAttributes="Bold" 
+                           TextColor="Blue">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:NearEarthObjectsViewModel}}, Path=NavigateToDetailsCommand}" 
+                                                  CommandParameter="{Binding .}" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label Text="Potentially Hazardous: {Binding IsPotentiallyHazardous}" />
+                    <Label Text="Estimated Diameter (km): {Binding Diameter.Kilometers.Min} - {Binding Diameter.Kilometers.Max}" />
+                </StackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentPage>
