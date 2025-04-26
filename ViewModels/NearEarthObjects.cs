@@ -36,10 +36,15 @@ public class NearEarthObjectsViewModel : INotifyPropertyChanged
         {
             if (asteroid != null)
             {
-                await Shell.Current.GoToAsync($"AsteroidDetailsPage", true, new Dictionary<string, object>
+                Console.WriteLine($"Navigating to details page for asteroid: {asteroid.Name}");
+                await Shell.Current.GoToAsync($"///AsteroidDetailsPage", true, new Dictionary<string, object>
                 {
                     { "Asteroid", asteroid }
                 });
+            }
+            else
+            {
+                Console.WriteLine("Asteroid is null");
             }
         });
     }

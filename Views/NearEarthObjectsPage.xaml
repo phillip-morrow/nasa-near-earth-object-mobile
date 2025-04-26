@@ -15,6 +15,7 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout Padding="5">
+                            <!-- Display only the asteroid name as a clickable link -->
                             <Label Text="{Binding Name}" 
                                    FontSize="18" 
                                    FontAttributes="Bold" 
@@ -24,8 +25,6 @@
                                                           CommandParameter="{Binding .}" />
                                 </Label.GestureRecognizers>
                             </Label>
-                            <Label Text="Potentially Hazardous: {Binding IsPotentiallyHazardous}" />
-                            <Label Text="Estimated Diameter (km): {Binding Diameter.Kilometers.Min} - {Binding Diameter.Kilometers.Max}" />
                         </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
