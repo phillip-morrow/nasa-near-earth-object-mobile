@@ -2,6 +2,23 @@
   "version": 3,
   "targets": {
     "net9.0-android35.0": {
+      "Appium.WebDriver/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.29.0",
+          "System.Drawing.Common": "8.0.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DotNetEnv/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -473,6 +490,28 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -520,6 +559,60 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NUnit/4.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
+        }
+      },
+      "Selenium.Support/4.32.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.32.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.32.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
         }
       },
       "Sprache/2.3.1": {
@@ -603,6 +696,25 @@
         },
         "runtime": {
           "lib/MonoAndroid10/_._": {}
+        }
+      },
+      "System.Drawing.Common/8.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Globalization/4.3.0": {
@@ -2944,6 +3056,23 @@
       }
     },
     "net9.0-android35.0/android-arm64": {
+      "Appium.WebDriver/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.29.0",
+          "System.Drawing.Common": "8.0.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DotNetEnv/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -3418,6 +3547,22 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -3465,6 +3610,28 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NUnit/4.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -3836,6 +4003,38 @@
           "runtimes/unix/lib/netstandard1.5/System.Runtime.Extensions.dll": {}
         }
       },
+      "Selenium.Support/4.32.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.32.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.32.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
+        }
+      },
       "Sprache/2.3.1": {
         "type": "package",
         "dependencies": {
@@ -3941,6 +4140,25 @@
         },
         "runtime": {
           "lib/MonoAndroid10/_._": {}
+        }
+      },
+      "System.Drawing.Common/8.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Globalization/4.3.0": {
@@ -6291,6 +6509,23 @@
       }
     },
     "net9.0-android35.0/android-x64": {
+      "Appium.WebDriver/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.29.0",
+          "System.Drawing.Common": "8.0.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DotNetEnv/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -6765,6 +7000,22 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -6812,6 +7063,28 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NUnit/4.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -7183,6 +7456,38 @@
           "runtimes/unix/lib/netstandard1.5/System.Runtime.Extensions.dll": {}
         }
       },
+      "Selenium.Support/4.32.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.32.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.32.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
+        }
+      },
       "Sprache/2.3.1": {
         "type": "package",
         "dependencies": {
@@ -7288,6 +7593,25 @@
         },
         "runtime": {
           "lib/MonoAndroid10/_._": {}
+        }
+      },
+      "System.Drawing.Common/8.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Globalization/4.3.0": {
@@ -9638,6 +9962,23 @@
       }
     },
     "net9.0-android35.0/iossimulator-arm64": {
+      "Appium.WebDriver/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.29.0",
+          "System.Drawing.Common": "8.0.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DotNetEnv/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -10112,6 +10453,22 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -10159,6 +10516,28 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NUnit/4.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -10530,6 +10909,38 @@
           "runtimes/unix/lib/netstandard1.5/System.Runtime.Extensions.dll": {}
         }
       },
+      "Selenium.Support/4.32.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.32.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.32.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
+        }
+      },
       "Sprache/2.3.1": {
         "type": "package",
         "dependencies": {
@@ -10635,6 +11046,25 @@
         },
         "runtime": {
           "lib/MonoAndroid10/_._": {}
+        }
+      },
+      "System.Drawing.Common/8.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Globalization/4.3.0": {
@@ -12985,6 +13415,23 @@
       }
     },
     "net9.0-android35.0/maccatalyst-arm64": {
+      "Appium.WebDriver/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.29.0",
+          "System.Drawing.Common": "8.0.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DotNetEnv/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -13459,6 +13906,22 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -13506,6 +13969,28 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NUnit/4.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -13877,6 +14362,38 @@
           "runtimes/unix/lib/netstandard1.5/System.Runtime.Extensions.dll": {}
         }
       },
+      "Selenium.Support/4.32.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.32.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.32.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
+        }
+      },
       "Sprache/2.3.1": {
         "type": "package",
         "dependencies": {
@@ -13982,6 +14499,25 @@
         },
         "runtime": {
           "lib/MonoAndroid10/_._": {}
+        }
+      },
+      "System.Drawing.Common/8.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Globalization/4.3.0": {
@@ -16332,6 +16868,23 @@
       }
     },
     "net9.0-ios18.4": {
+      "Appium.WebDriver/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.29.0",
+          "System.Drawing.Common": "8.0.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DotNetEnv/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -16780,6 +17333,28 @@
           }
         }
       },
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -16827,6 +17402,28 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NUnit/4.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -17000,6 +17597,38 @@
           }
         }
       },
+      "Selenium.Support/4.32.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.32.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.32.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
+        }
+      },
       "Sprache/2.3.1": {
         "type": "package",
         "dependencies": {
@@ -17158,6 +17787,25 @@
           "ref/netstandard1.5/System.Diagnostics.Tracing.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Drawing.Common/8.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Globalization/4.3.0": {
@@ -18061,6 +18709,23 @@
       }
     },
     "net9.0-ios18.4/android-arm64": {
+      "Appium.WebDriver/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.29.0",
+          "System.Drawing.Common": "8.0.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DotNetEnv/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -18510,6 +19175,22 @@
           }
         }
       },
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -18557,6 +19238,28 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NUnit/4.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -18975,6 +19678,38 @@
           "runtimes/unix/lib/netstandard1.5/System.Runtime.Extensions.dll": {}
         }
       },
+      "Selenium.Support/4.32.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.32.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.32.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
+        }
+      },
       "Sprache/2.3.1": {
         "type": "package",
         "dependencies": {
@@ -19138,6 +19873,25 @@
           "ref/netstandard1.5/System.Diagnostics.Tracing.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Drawing.Common/8.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Globalization/4.3.0": {
@@ -20087,6 +20841,23 @@
       }
     },
     "net9.0-ios18.4/android-x64": {
+      "Appium.WebDriver/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.29.0",
+          "System.Drawing.Common": "8.0.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DotNetEnv/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -20536,6 +21307,22 @@
           }
         }
       },
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -20583,6 +21370,28 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NUnit/4.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -21001,6 +21810,38 @@
           "runtimes/unix/lib/netstandard1.5/System.Runtime.Extensions.dll": {}
         }
       },
+      "Selenium.Support/4.32.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.32.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.32.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
+        }
+      },
       "Sprache/2.3.1": {
         "type": "package",
         "dependencies": {
@@ -21164,6 +22005,25 @@
           "ref/netstandard1.5/System.Diagnostics.Tracing.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Drawing.Common/8.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Globalization/4.3.0": {
@@ -22113,6 +22973,23 @@
       }
     },
     "net9.0-ios18.4/iossimulator-arm64": {
+      "Appium.WebDriver/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.29.0",
+          "System.Drawing.Common": "8.0.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DotNetEnv/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -22562,6 +23439,22 @@
           }
         }
       },
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -22609,6 +23502,28 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NUnit/4.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -23027,6 +23942,38 @@
           "runtimes/unix/lib/netstandard1.5/System.Runtime.Extensions.dll": {}
         }
       },
+      "Selenium.Support/4.32.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.32.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.32.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
+        }
+      },
       "Sprache/2.3.1": {
         "type": "package",
         "dependencies": {
@@ -23190,6 +24137,25 @@
           "ref/netstandard1.5/System.Diagnostics.Tracing.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Drawing.Common/8.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Globalization/4.3.0": {
@@ -24139,6 +25105,23 @@
       }
     },
     "net9.0-ios18.4/maccatalyst-arm64": {
+      "Appium.WebDriver/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.29.0",
+          "System.Drawing.Common": "8.0.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DotNetEnv/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -24588,6 +25571,22 @@
           }
         }
       },
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -24635,6 +25634,28 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NUnit/4.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -25053,6 +26074,38 @@
           "runtimes/unix/lib/netstandard1.5/System.Runtime.Extensions.dll": {}
         }
       },
+      "Selenium.Support/4.32.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.32.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.32.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
+        }
+      },
       "Sprache/2.3.1": {
         "type": "package",
         "dependencies": {
@@ -25216,6 +26269,25 @@
           "ref/netstandard1.5/System.Diagnostics.Tracing.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Drawing.Common/8.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Globalization/4.3.0": {
@@ -26165,6 +27237,23 @@
       }
     },
     "net9.0-maccatalyst18.4": {
+      "Appium.WebDriver/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.29.0",
+          "System.Drawing.Common": "8.0.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DotNetEnv/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -26613,6 +27702,28 @@
           }
         }
       },
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -26660,6 +27771,28 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NUnit/4.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -26833,6 +27966,38 @@
           }
         }
       },
+      "Selenium.Support/4.32.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.32.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.32.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
+        }
+      },
       "Sprache/2.3.1": {
         "type": "package",
         "dependencies": {
@@ -26991,6 +28156,25 @@
           "ref/netstandard1.5/System.Diagnostics.Tracing.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Drawing.Common/8.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Globalization/4.3.0": {
@@ -27894,6 +29078,23 @@
       }
     },
     "net9.0-maccatalyst18.4/android-arm64": {
+      "Appium.WebDriver/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.29.0",
+          "System.Drawing.Common": "8.0.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DotNetEnv/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -28343,6 +29544,22 @@
           }
         }
       },
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -28390,6 +29607,28 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NUnit/4.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -28808,6 +30047,38 @@
           "runtimes/unix/lib/netstandard1.5/System.Runtime.Extensions.dll": {}
         }
       },
+      "Selenium.Support/4.32.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.32.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.32.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
+        }
+      },
       "Sprache/2.3.1": {
         "type": "package",
         "dependencies": {
@@ -28971,6 +30242,25 @@
           "ref/netstandard1.5/System.Diagnostics.Tracing.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Drawing.Common/8.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Globalization/4.3.0": {
@@ -29920,6 +31210,23 @@
       }
     },
     "net9.0-maccatalyst18.4/android-x64": {
+      "Appium.WebDriver/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.29.0",
+          "System.Drawing.Common": "8.0.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DotNetEnv/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -30369,6 +31676,22 @@
           }
         }
       },
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -30416,6 +31739,28 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NUnit/4.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -30834,6 +32179,38 @@
           "runtimes/unix/lib/netstandard1.5/System.Runtime.Extensions.dll": {}
         }
       },
+      "Selenium.Support/4.32.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.32.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.32.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
+        }
+      },
       "Sprache/2.3.1": {
         "type": "package",
         "dependencies": {
@@ -30997,6 +32374,25 @@
           "ref/netstandard1.5/System.Diagnostics.Tracing.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Drawing.Common/8.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Globalization/4.3.0": {
@@ -31946,6 +33342,23 @@
       }
     },
     "net9.0-maccatalyst18.4/iossimulator-arm64": {
+      "Appium.WebDriver/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.29.0",
+          "System.Drawing.Common": "8.0.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DotNetEnv/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -32395,6 +33808,22 @@
           }
         }
       },
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -32442,6 +33871,28 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NUnit/4.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -32860,6 +34311,38 @@
           "runtimes/unix/lib/netstandard1.5/System.Runtime.Extensions.dll": {}
         }
       },
+      "Selenium.Support/4.32.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.32.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.32.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
+        }
+      },
       "Sprache/2.3.1": {
         "type": "package",
         "dependencies": {
@@ -33023,6 +34506,25 @@
           "ref/netstandard1.5/System.Diagnostics.Tracing.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Drawing.Common/8.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Globalization/4.3.0": {
@@ -33972,6 +35474,23 @@
       }
     },
     "net9.0-maccatalyst18.4/maccatalyst-arm64": {
+      "Appium.WebDriver/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.29.0",
+          "System.Drawing.Common": "8.0.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DotNetEnv/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -34421,6 +35940,22 @@
           }
         }
       },
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -34468,6 +36003,28 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "NUnit/4.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -34886,6 +36443,38 @@
           "runtimes/unix/lib/netstandard1.5/System.Runtime.Extensions.dll": {}
         }
       },
+      "Selenium.Support/4.32.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.32.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.32.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
+        }
+      },
       "Sprache/2.3.1": {
         "type": "package",
         "dependencies": {
@@ -35049,6 +36638,25 @@
           "ref/netstandard1.5/System.Diagnostics.Tracing.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Drawing.Common/8.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Globalization/4.3.0": {
@@ -35999,6 +37607,22 @@
     }
   },
   "libraries": {
+    "Appium.WebDriver/7.2.0": {
+      "sha512": "n5dxeDOFAm4fJ+kSBUnlQnJBzy9JuZik6/i0CJeU0TmXmoudmPcGdu3iuhD/pZoIP/21dr3K22T9zHWm0Q9VnA==",
+      "type": "package",
+      "path": "appium.webdriver/7.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "appium-icon.png",
+        "appium.webdriver.7.2.0.nupkg.sha512",
+        "appium.webdriver.nuspec",
+        "lib/netstandard2.0/Appium.Net.dll",
+        "lib/netstandard2.0/Appium.Net.xml"
+      ]
+    },
     "DotNetEnv/3.1.1": {
       "sha512": "o4SqUVCq0pqHF/HYsZk6k22XGIVmvsDVo+Dy7l0ubq9uQ45JkXswrMRJmYvhGLXWFYF0M5OupMonytB+0zvpGQ==",
       "type": "package",
@@ -37199,6 +38823,41 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
+    "Microsoft.Win32.SystemEvents/8.0.0": {
+      "sha512": "9opKRyOKMCi2xJ7Bj7kxtZ1r9vbzosMvRrdEhVhDz8j8MoBGgB+WmC94yH839NPH+BclAjtQ/pyagvi/8gDLkw==",
+      "type": "package",
+      "path": "microsoft.win32.systemevents/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Win32.SystemEvents.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Win32.SystemEvents.targets",
+        "lib/net462/Microsoft.Win32.SystemEvents.dll",
+        "lib/net462/Microsoft.Win32.SystemEvents.xml",
+        "lib/net6.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net6.0/Microsoft.Win32.SystemEvents.xml",
+        "lib/net7.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net7.0/Microsoft.Win32.SystemEvents.xml",
+        "lib/net8.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net8.0/Microsoft.Win32.SystemEvents.xml",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
+        "microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+        "microsoft.win32.systemevents.nuspec",
+        "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.xml",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "NETStandard.Library/1.6.1": {
       "sha512": "WcSp3+vP+yHNgS8EV5J7pZ9IRpeDuARBPN28by8zqff1wJQXm26PVU8L3/fYLBJVU7BtDyqNVWq2KlCVvSSR4A==",
       "type": "package",
@@ -37210,6 +38869,35 @@
         "dotnet_library_license.txt",
         "netstandard.library.1.6.1.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "NUnit/4.3.2": {
+      "sha512": "puVXayXNmEu7MFQSUswGmUjOy3M3baprMbkLl5PAutpeDoGTr+jPv33qAYsqxywi2wJCq8l/O3EhHoLulPE1iQ==",
+      "type": "package",
+      "path": "nunit/4.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "NOTICES.md",
+        "README.md",
+        "THIRD_PARTY_NOTICES.md",
+        "build/NUnit.props",
+        "icon.png",
+        "lib/net462/nunit.framework.dll",
+        "lib/net462/nunit.framework.legacy.dll",
+        "lib/net462/nunit.framework.legacy.xml",
+        "lib/net462/nunit.framework.xml",
+        "lib/net6.0/nunit.framework.dll",
+        "lib/net6.0/nunit.framework.legacy.dll",
+        "lib/net6.0/nunit.framework.legacy.xml",
+        "lib/net6.0/nunit.framework.xml",
+        "lib/net8.0/nunit.framework.dll",
+        "lib/net8.0/nunit.framework.legacy.dll",
+        "lib/net8.0/nunit.framework.legacy.xml",
+        "lib/net8.0/nunit.framework.xml",
+        "nunit.4.3.2.nupkg.sha512",
+        "nunit.nuspec"
       ]
     },
     "runtime.any.System.Collections/4.3.0": {
@@ -38159,6 +39847,42 @@
         "runtimes/unix/lib/netstandard1.5/System.Runtime.Extensions.dll"
       ]
     },
+    "Selenium.Support/4.32.0": {
+      "sha512": "rWIsE2xBZ4i0x7u22dUHC5mUiaNCdZSfPo8+C4xq680ANR7ZIA5eF0a1lJYD+UNntm9LAK/BvZPjMaTOk2fQEg==",
+      "type": "package",
+      "path": "selenium.support/4.32.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/WebDriver.Support.dll",
+        "lib/netstandard2.0/WebDriver.Support.xml",
+        "selenium.support.4.32.0.nupkg.sha512",
+        "selenium.support.nuspec"
+      ]
+    },
+    "Selenium.WebDriver/4.32.0": {
+      "sha512": "7mocv9JMt3jth7nkfrKISv23dwRR8+1/QE0REyNco+L6A9tSFdR+makPZpGKSE8ppTt8JMyvFPQLgRnPzRL5+w==",
+      "type": "package",
+      "path": "selenium.webdriver/4.32.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Selenium.WebDriver.targets",
+        "buildTransitive/Selenium.WebDriver.targets",
+        "icon.png",
+        "lib/net8.0/WebDriver.dll",
+        "lib/net8.0/WebDriver.xml",
+        "lib/netstandard2.0/WebDriver.dll",
+        "lib/netstandard2.0/WebDriver.xml",
+        "manager/linux/selenium-manager",
+        "manager/macos/selenium-manager",
+        "manager/windows/selenium-manager.exe",
+        "selenium.webdriver.4.32.0.nupkg.sha512",
+        "selenium.webdriver.nuspec"
+      ]
+    },
     "Sprache/2.3.1": {
       "sha512": "Q+mXeiTxiUYG3lKYF6TS82/SyB4F2613Q1yXTMwg4jWGHEEVC3yrzHtNcI4B3qnDI0+eJsezGJ0V+cToUytHWw==",
       "type": "package",
@@ -38662,6 +40386,46 @@
         "ref/xamarinwatchos10/_._",
         "system.diagnostics.tracing.4.3.0.nupkg.sha512",
         "system.diagnostics.tracing.nuspec"
+      ]
+    },
+    "System.Drawing.Common/8.0.10": {
+      "sha512": "MdajRp3P+FOlThgY6FBjAqnmLiVl5t2yWEC/2AsDMqx1zYbJG3G5TnscFBQ4obqcaGqvN5UnhQHSFaJFG2HftQ==",
+      "type": "package",
+      "path": "system.drawing.common/8.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Drawing.Common.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Drawing.Common.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/System.Drawing.Common.dll",
+        "lib/net462/System.Drawing.Common.pdb",
+        "lib/net462/System.Drawing.Common.xml",
+        "lib/net6.0/System.Drawing.Common.dll",
+        "lib/net6.0/System.Drawing.Common.pdb",
+        "lib/net6.0/System.Drawing.Common.xml",
+        "lib/net7.0/System.Drawing.Common.dll",
+        "lib/net7.0/System.Drawing.Common.pdb",
+        "lib/net7.0/System.Drawing.Common.xml",
+        "lib/net8.0/System.Drawing.Common.dll",
+        "lib/net8.0/System.Drawing.Common.pdb",
+        "lib/net8.0/System.Drawing.Common.xml",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.pdb",
+        "lib/netstandard2.0/System.Drawing.Common.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "system.drawing.common.8.0.10.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Globalization/4.3.0": {
@@ -43320,22 +45084,31 @@
   },
   "projectFileDependencyGroups": {
     "net9.0-android35.0": [
+      "Appium.WebDriver >= 7.2.0",
       "DotNetEnv >= 3.1.1",
       "Microsoft.Extensions.Logging.Debug >= 9.0.0",
       "Microsoft.Maui.Controls >= 9.0.14",
-      "Microsoft.NET.ILLink.Tasks >= 9.0.4"
+      "Microsoft.NET.ILLink.Tasks >= 9.0.4",
+      "NUnit >= 4.3.2",
+      "Selenium.Support >= 4.32.0"
     ],
     "net9.0-ios18.4": [
+      "Appium.WebDriver >= 7.2.0",
       "DotNetEnv >= 3.1.1",
       "Microsoft.Extensions.Logging.Debug >= 9.0.0",
       "Microsoft.Maui.Controls >= 9.0.14",
-      "Microsoft.NET.ILLink.Tasks >= 9.0.4"
+      "Microsoft.NET.ILLink.Tasks >= 9.0.4",
+      "NUnit >= 4.3.2",
+      "Selenium.Support >= 4.32.0"
     ],
     "net9.0-maccatalyst18.4": [
+      "Appium.WebDriver >= 7.2.0",
       "DotNetEnv >= 3.1.1",
       "Microsoft.Extensions.Logging.Debug >= 9.0.0",
       "Microsoft.Maui.Controls >= 9.0.14",
-      "Microsoft.NET.ILLink.Tasks >= 9.0.4"
+      "Microsoft.NET.ILLink.Tasks >= 9.0.4",
+      "NUnit >= 4.3.2",
+      "Selenium.Support >= 4.32.0"
     ]
   },
   "packageFolders": {
@@ -43393,6 +45166,10 @@
       "net9.0-android35.0": {
         "targetAlias": "net9.0-android",
         "dependencies": {
+          "Appium.WebDriver": {
+            "target": "Package",
+            "version": "[7.2.0, )"
+          },
           "DotNetEnv": {
             "target": "Package",
             "version": "[3.1.1, )"
@@ -43410,6 +45187,14 @@
             "target": "Package",
             "version": "[9.0.4, )",
             "autoReferenced": true
+          },
+          "NUnit": {
+            "target": "Package",
+            "version": "[4.3.2, )"
+          },
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "[4.32.0, )"
           }
         },
         "imports": [
@@ -43436,6 +45221,10 @@
       "net9.0-ios18.4": {
         "targetAlias": "net9.0-ios",
         "dependencies": {
+          "Appium.WebDriver": {
+            "target": "Package",
+            "version": "[7.2.0, )"
+          },
           "DotNetEnv": {
             "target": "Package",
             "version": "[3.1.1, )"
@@ -43453,6 +45242,14 @@
             "target": "Package",
             "version": "[9.0.4, )",
             "autoReferenced": true
+          },
+          "NUnit": {
+            "target": "Package",
+            "version": "[4.3.2, )"
+          },
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "[4.32.0, )"
           }
         },
         "imports": [
@@ -43479,6 +45276,10 @@
       "net9.0-maccatalyst18.4": {
         "targetAlias": "net9.0-maccatalyst",
         "dependencies": {
+          "Appium.WebDriver": {
+            "target": "Package",
+            "version": "[7.2.0, )"
+          },
           "DotNetEnv": {
             "target": "Package",
             "version": "[3.1.1, )"
@@ -43496,6 +45297,14 @@
             "target": "Package",
             "version": "[9.0.4, )",
             "autoReferenced": true
+          },
+          "NUnit": {
+            "target": "Package",
+            "version": "[4.3.2, )"
+          },
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "[4.32.0, )"
           }
         },
         "imports": [
